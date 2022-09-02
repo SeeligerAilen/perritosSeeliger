@@ -1,0 +1,13 @@
+.header{
+    background-color: rgb(81, 210, 167);
+    padding: 20px;
+    a{
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        h1:hover{
+            transform: scale(1.2);
+            transition: transform 300ms ease;
+        }
+    }
+}

@@ -1,0 +1,72 @@
+.main {
+  h2 {
+    text-align: center;
+  }
+  .publico {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 10px;
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 10px 0px;
+      background-image: url(../../img/fondo.png);
+      background-size: cover;
+      p{
+        padding: 10px;
+      }
+      button{
+        padding: 5px;
+        border: none;
+        border-radius: 10px;
+        margin-bottom: 5px;
+        &:hover{
+            background-color: rgb(81, 210, 167);
+            color: rgb(255, 255, 255);
+        }
+      }
+    }
+  }
+  .enviar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    form{
+        width: 50%;
+    
+    div {
+      display: flex;
+      flex-direction: column;
+      margin: 5px;
+      input{
+        margin: 5px;
+        &:focus{
+            background-color:aquamarine;
+        }
+      }
+    }
+    }
+  }
+}
+@media (min-width: 768px) {
+  .main {
+    .publico {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .enviar{
+        form{
+            width: 70%;
+        }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .main {
+    .publico {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}

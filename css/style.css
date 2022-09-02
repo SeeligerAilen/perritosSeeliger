@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none; }
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-width: 100vh; }
+
+.header {
+  background-color: #51d2a7;
+  padding: 20px; }
+  .header a {
+    text-align: center;
+    text-decoration: none;
+    color: white; }
+    .header a h1:hover {
+      transform: scale(1.2);
+      transition: transform 300ms ease; }
+
+.footer {
+  background-color: #51d2a7;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+  height: 50px;
+  margin-top: auto; }
+  .footer a {
+    color: black; }
+    .footer a:hover {
+      scale: 1.3; }
+
+.main h2 {
+  text-align: center; }
+
+.main .publico {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 10px; }
+  .main .publico .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0px;
+    background-image: url(../../img/fondo.png);
+    background-size: cover; }
+    .main .publico .card p {
+      padding: 10px; }
+    .main .publico .card button {
+      padding: 5px;
+      border: none;
+      border-radius: 10px;
+      margin-bottom: 5px; }
+      .main .publico .card button:hover {
+        background-color: #51d2a7;
+        color: white; }
+
+.main .enviar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px; }
+  .main .enviar form {
+    width: 50%; }
+    .main .enviar form div {
+      display: flex;
+      flex-direction: column;
+      margin: 5px; }
+      .main .enviar form div input {
+        margin: 5px; }
+        .main .enviar form div input:focus {
+          background-color: aquamarine; }
+
+@media (min-width: 768px) {
+  .main .publico {
+    grid-template-columns: repeat(2, 1fr); }
+  .main .enviar form {
+    width: 70%; } }
+
+@media (min-width: 1024px) {
+  .main .publico {
+    grid-template-columns: repeat(3, 1fr); } }
